@@ -1,4 +1,4 @@
-Bản quyền 2026 PHAN THI MY AI
+Bản quyền 2026 PHAN THỊ MỸ ÁI
 
 Theo đây, bất kỳ người nào có được bản sao phần mềm này và các tệp tài liệu liên quan (gọi là “Phần mềm”) đều được phép sử dụng Phần mềm mà không bị hạn chế, bao gồm nhưng không giới hạn quyền sử dụng, sao chép, sửa đổi, hợp nhất, xuất bản, phân phối, cấp phép lại và/hoặc bán các bản sao của Phần mềm, và cho phép những người được cung cấp Phần mềm thực hiện điều đó, với điều kiện tuân theo các điều kiện sau:
 
