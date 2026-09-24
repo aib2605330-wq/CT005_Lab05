@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infographic và Video YouTube</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 40px auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0f766e;
+      margin-bottom: 32px;
+    }
+
+    .infographic {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    .step {
+      position: relative;
+      padding: 28px 20px;
+      text-align: center;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      top: 50%;
+      right: -18px;
+      transform: translateY(-50%);
+      font-size: 28px;
+      color: #0d9488;
+      z-index: 1;
+    }
+
+    .icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: #ccfbf1;
+      color: #0f766e;
+      font-size: 30px;
+    }
+
+    .step h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .step p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .video-section {
+      padding: 28px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .video-section h2 {
+      margin-top: 0;
+      color: #0f766e;
+    }
+
+    .video-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      background: #0f172a;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 800px) {
+      .infographic {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .step:not(:last-child)::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .infographic {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        margin: 24px auto;
+      }
+
+      .video-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Quy trình học trực tuyến hiệu quả</h1>
+
+    <section class="infographic" aria-label="Các bước học trực tuyến">
+      <article class="step">
+        <div class="icon">🎯</div>
+        <h2>Đặt mục tiêu</h2>
+        <p>Xác định rõ điều bạn muốn đạt được sau khóa học.</p>
+      </article>
+
+      <article class="step">
+        <div class="icon">📚</div>
+        <h2>Học tập</h2>
+        <p>Tiếp thu kiến thức thông qua bài giảng và tài liệu.</p>
+      </article>
+
+      <article class="step">
+        <div class="icon">✍️</div>
+        <h2>Thực hành</h2>
+        <p>Áp dụng kiến thức vào các bài tập và dự án thực tế.</p>
+      </article>
+
+      <article class="step">
+        <div class="icon">🏆</div>
+        <h2>Đánh giá</h2>
+        <p>Kiểm tra kết quả và cải thiện những điểm còn thiếu.</p>
+      </article>
+    </section>
+
+    <section class="video-section">
+      <h2>Video hướng dẫn</h2>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/kUmKv4NBYV4"
+          title="Video YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
